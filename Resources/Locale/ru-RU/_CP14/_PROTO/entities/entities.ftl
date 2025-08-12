@@ -77,17 +77,13 @@ ent-CP14WoodenClosetBlacksmithFilled = { ent-CP14WoodenCloset }
     .desc = { ent-CP14WoodenCloset.desc }
     .suffix = Кузнец, Заполненный
 
-ent-CP14WoodenClosetGuardFilled = { ent-CP14WoodenCloset }
-    .desc = { ent-CP14WoodenCloset.desc }
-    .suffix = Стража, Заполненный
-
-ent-CP14WoodenClosetGuardCommanderFilled = { ent-CP14WoodenCloset }
-    .desc = { ent-CP14WoodenCloset.desc }
-    .suffix = Командир стражи, Заполненный
-
 ent-CP14WoodenClosetGuildmasterFilled = { ent-CP14WoodenCloset }
     .desc = { ent-CP14WoodenCloset.desc }
     .suffix = Гильдмастер, Заполненный
+
+ent-CP14WoodenClosetChefFilled = { ent-CP14WoodenCloset }
+    .desc = { ent-CP14WoodenCloset.desc }
+    .suffix = Повар, Заполненный
 
 ent-CP14WoodenCabinetAlchemist = { ent-CP14WoodenCabinet }
     .desc = { ent-CP14WoodenCabinet.desc }
@@ -108,6 +104,10 @@ ent-CP14WoodenCabinetBlacksmith = { ent-CP14WoodenCabinet }
 ent-CP14WoodenCabinetGuard = { ent-CP14WoodenCabinet }
     .desc = { ent-CP14WoodenCabinet.desc }
     .suffix = Стража, Заполненный
+
+ent-CP14WoodenCabinetInvestigator = { ent-CP14WoodenCabinet }
+    .desc = { ent-CP14WoodenCabinet.desc }
+    .suffix = Дознаватель, Заполненный
 
 ent-CP14WoodenCabinetGuardCommander = { ent-CP14WoodenCabinet }
     .desc = { ent-CP14WoodenCabinet.desc }
@@ -170,17 +170,22 @@ ent-CP14BaseSpellScrollNecromancy = { ent-CP14BaseSpellScroll }
 ent-CP14BaseSpellScrollWater = { ent-CP14BaseSpellScroll }
     .desc = { ent-CP14BaseSpellScroll.desc }
 
-ent-CP14ActionSpellHealFromDeathBallade = Исцеляющая мёртвых баллада
-    .desc = Ваша музыка наполнена целительной магией, быстро исцеляющей всех существ вокруг вас.
+ent-CP14ActionSpellDash = Рывок
+    .desc = Вы быстрым рывком перемещаетесь в выбранную позицию, чтобы стремительно сократить расстояние или уклониться от опасности.
 
-ent-CP14ImpactEffectDeadHealBallade = { ent-CP14BaseMagicImpact }
+ent-CP14ActionSpellKick = Пинок
+    .desc = Вы совершаете эпичный пинок по выбранному объекту, отталкивая его от себя.
+
+ent-CP14DustEffectKickSound = Нет
+
+ent-CP14ActionBearSpellSprint = Спринт
+    .desc = Догнать и разорвать, каждый хищник может ускориться и догнать свою добычу.
+
+ent-CP14ImpactEffectSecondWind = { ent-CP14BaseMagicImpact }
     .desc = { ent-CP14BaseMagicImpact.desc }
 
-ent-CP14RuneDeadHealBallade = { ent-CP14BaseMagicRune }
-    .desc = { ent-CP14BaseMagicRune.desc }
-
-ent-CP14ActionSpellResurrectionDead = Воскрешение смерти
-    .desc = Вы воскрешаете цель и излечиваете ее от урона.
+ent-CP14ActionSpellSprint = Спринт
+    .desc = За счет значительных затрат выносливости, вы значительно ускоряетесь в движении.
 
 ent-CP14ActionRenounceFromGod = Отречься от покровителя
     .desc = Вы отрекаетесь от своего покровителя, разрывая с ним связь. После этого вы уже никогда не сможете стать его последователем, но можете стать последователем другого покровителя.
@@ -211,6 +216,9 @@ ent-CP14LumeraMindImproveImpact = { ent-CP14BaseMagicImpact }
 
 ent-CP14ActionSpellGodLumeraMoonStrike = Лунный удар
     .desc = Вы фокусируете концентрированный свет звезд в одной точке, ослепляя и повреждая все, что попадает в поле зрения разгневанной богини.
+
+ent-CP14ImpactEffectMoonStrike = { ent-CP14BaseMagicImpact }
+    .desc = { ent-CP14BaseMagicImpact.desc }
 
 ent-CP14SkyLumeraStrike = удар Лумеры
 
@@ -295,6 +303,40 @@ ent-CP14ImpactEffectEarthWall = { ent-CP14BaseMagicImpact }
 
 ent-CP14SpellScrollEarthWall = свиток заклинания земляной стены
     .desc = { ent-CP14BaseSpellScrollEarth.desc }
+
+ent-CP14ActionSpellLightningStrike = Удар молнии
+    .desc = Вы выпускаете мощную молнию, которая выжигает у цели большое количество выносливости.
+
+ent-CP14LightningStrikeBeam = молния
+
+ent-CP14RuneLightningStrike = { ent-CP14BaseMagicRune }
+    .desc = { ent-CP14BaseMagicRune.desc }
+
+ent-CP14ActionSpellLightningStrikeSmall = Небольшой удар молнии
+    .desc = Вы выпускаете молнию, которая отнимает у цели среднее количество выносливости.
+
+ent-CP14LightningStrikeSmallBeam = молния
+
+ent-CP14ActionSpellResurrection = Восстанавливающий разряд
+    .desc = Вы поражаете умирающую цель безопасным электрическим разрядом, заставляя ее сердце снова биться.
+
+ent-CP14RuneResurrection = { ent-CP14BaseMagicRune }
+    .desc = { ent-CP14BaseMagicRune.desc }
+
+ent-CP14ImpactEffectResurrection = { ent-CP14BaseMagicImpact }
+    .desc = { ent-CP14BaseMagicImpact.desc }
+
+ent-CP14SpellScrollResurrection = свиток заклинания воскрешения
+    .desc = { ent-CP14BaseSpellScrollNecromancy.desc }
+
+ent-CP14ActionSpellSpeedBallade = Баллада скорости
+    .desc = Ваша музыка наполняется магией, ускоряющей движение всех существ поблизости.
+
+ent-CP14ImpactEffectSpeedBallade = { ent-CP14BaseMagicImpact }
+    .desc = { ent-CP14BaseMagicImpact.desc }
+
+ent-CP14RuneSpeedBallade = { ent-CP14BaseMagicRune }
+    .desc = { ent-CP14BaseMagicRune.desc }
 
 ent-CP14ActionSpellFireball = Огненный шар
     .desc = Эффективный метод уничтожения - взрывной огненный шар.
@@ -443,18 +485,6 @@ ent-CP14ImpactEffectPlantGrowth = { ent-CP14BaseMagicImpact }
 ent-CP14RunePlantGrowth = { ent-CP14BaseMagicRune }
     .desc = { ent-CP14BaseMagicRune.desc }
 
-ent-CP14ActionSpellResurrection = Воскрешение
-    .desc = Вы пытаетесь вернуть душу обратно в искалеченное тело.
-
-ent-CP14RuneResurrection = { ent-CP14BaseMagicRune }
-    .desc = { ent-CP14BaseMagicRune.desc }
-
-ent-CP14ImpactEffectResurrection = { ent-CP14BaseMagicImpact }
-    .desc = { ent-CP14BaseMagicImpact.desc }
-
-ent-CP14SpellScrollResurrection = свиток заклинания воскрешения
-    .desc = { ent-CP14BaseSpellScrollNecromancy.desc }
-
 ent-CP14ActionSpellSheepPolymorph = Овечкофикация
     .desc = Вы проклинаете цель, превращая ее на короткое время в глупую овцу.
 
@@ -466,15 +496,6 @@ ent-CP14ImpactEffectSheepPolymorph = { ent-CP14BaseMagicImpact }
 
 ent-CP14SpellScrollSheepPolymorph = свиток заклинания овечкофикации
     .desc = { ent-CP14BaseSpellScrollHealing.desc }
-
-ent-CP14ActionSpellSpeedBallade = Баллада скорости
-    .desc = Ваша музыка наполняется магией, ускоряющей движение всех существ поблизости.
-
-ent-CP14ImpactEffectSpeedBallade = { ent-CP14BaseMagicImpact }
-    .desc = { ent-CP14BaseMagicImpact.desc }
-
-ent-CP14RuneSpeedBallade = { ent-CP14BaseMagicRune }
-    .desc = { ent-CP14BaseMagicRune.desc }
 
 ent-CP14ActionSpellFlashLight = Вспышка света
     .desc = Создает вспышку яркого, ослепительного света.
@@ -511,9 +532,6 @@ ent-CP14RuneSphereOfLight = { ent-CP14BaseMagicRune }
 ent-CP14ImpactEffectSphereOfLight = { ent-CP14BaseMagicImpact }
     .desc = { ent-CP14BaseMagicImpact.desc }
 
-ent-CP14SphereOfLight = сфера света
-    .desc = Сгусток яркого света в форме сферы.
-
 ent-CP14SpellScrollSphereOfLight = свиток заклинания сферы света
     .desc = { ent-CP14BaseSpellScrollLight.desc }
 
@@ -537,6 +555,9 @@ ent-CP14ActionSpellLurkerStep = Теневой шаг
 
 ent-CP14ImpactEffectLurkerStep = { ent-CP14BaseMagicImpact }
     .desc = { ent-CP14BaseMagicImpact.desc }
+
+ent-CP14ActionSpellMagicArmor = Магическая броня
+    .desc = Вы окружаете цель кратковременным магическим барьером, который поглощает часть получаемого ею урона.
 
 ent-CP14ActionSpellMagicBallade = Магическая баллада
     .desc = Своей музыкой вы наполняете маной окружающие вас предметы.
@@ -583,8 +604,8 @@ ent-CP14RuneMagicSplitting = { ent-CP14BaseMagicRune }
 ent-CP14ImpactEffectMagicSplitting = { ent-CP14BaseMagicImpact }
     .desc = { ent-CP14BaseMagicImpact.desc }
 
-ent-CP14SpellScrollMagicSplitting = свиток магического заклинания расщепления
-    .desc = { ent-CP14BaseSpellScrollMeta.desc }
+ent-CP14ActionSpellMagicSplittingSmall = Малое магическое расщепление
+    .desc = Вы разрушаете саму суть магии, прерывая заклинания, уничтожая ману и многое другое.
 
 ent-CP14ActionSpellManaTrance = Мана-транс
     .desc = На некоторое время вы погружаетесь в транс, восстанавливая ману.
@@ -592,22 +613,12 @@ ent-CP14ActionSpellManaTrance = Мана-транс
 ent-CP14RuneManaTrance = { ent-CP14BaseMagicRune }
     .desc = { ent-CP14BaseMagicRune.desc }
 
-ent-CP14ActionSpellKick = Пинок
-    .desc = Вы наносите эпический удар ногой по выбранному объекту, отталкивая его от себя.
+ent-CP14ActionToggleMagicVision = Магическое зрение
+    .desc = Вы сосредоточиваетесь на магических потоках, чтобы отслеживать недавние события и сканировать отпечатки ауры других живых существ.
 
-ent-CP14DustEffectKickSound = None
+ent-CP14ManaVisionPointer = указатель
 
-ent-CP14ActionSpellKickSkeleton = Пинок
-    .desc = Вы наносите эпический удар ногой по выбранному объекту, отталкивая его от себя.
-
-ent-CP14ActionSpellSprint = Спринт
-    .desc = Затрачивая много выносливости, вы значительно ускоряетесь в движении.
-
-ent-CP14ActionSpellSprintGoblin = Проворство гоблина
-    .desc = { ent-CP14ActionSpellSprint.desc }
-
-ent-CP14ActionSpellSprintSkeleton = Спринт
-    .desc = Затрачивая много выносливости, вы значительно ускоряетесь в движении.
+ent-CP14MagicVisionMarker = след маны
 
 ent-CP14ActionSpellSlimeJump = Слаймопрыжок
     .desc = Прыгай! ПРЫГАЙ!
@@ -713,34 +724,34 @@ ent-CP14ClothingBackBackpackT0 = мешок
     .desc = Простой тканевый мешок с базовой вместимостью. Легкий, но не очень надежный.
 
 ent-CP14ClothingBackBackpackT1 = рюкзак
-    .desc = Стандартный рюкзак с приличным объемом хранения. Идеально подходит для повседневного использования. Немного стесняет движения, но защищает спину от ударов!
+    .desc = Стандартный рюкзак с приличным объемом. Идеален для повседневного использования. Защищает спину от ударов!
 
-ent-CP14ClothingBackBackpackT2 = расширенный рюкзак
-    .desc = Расширенный рюкзак увеличенной вместимости. Идеально подходит для длительных поездок. Стесняет движения, но защищает спину от ударов и сохраняет тепло!
+ent-CP14ClothingBackBackpackT2 = вместительный рюкзак
+    .desc = Увеличенный рюкзак с большей вместимостью. Идеален для длительных походов. Незначительно сковывает при беге, но защищает спину от ударов и сохраняет тепло!
 
-ent-CP14ClothingBackBackpackT3 = рюкзак путешественника
-    .desc = Большой, хорошо организованный рюкзак, предназначенный для длительных путешествий, с несколькими отделениями. Значительно стесняет движения, но защищает спину!
+ent-CP14ClothingBackBackpackT3 = дорожный рюкзак
+    .desc = Большой, хорошо организованный рюкзак для длительных путешествий с несколькими отделениями. Сковывает при беге и защищает спину и шею от ударов!.
 
-ent-CP14ClothingBackBackpackReinforced = усиленный рюкзак
-    .desc = Прочный рюкзак с усиленными швами и материалами для дополнительной защиты ваших вещей. Стесняет движения, но защищает спину от ударов и сохраняет тепло!
+ent-CP14ClothingBackBackpackReinforced = укрепленный рюкзак
+    .desc = Прочный рюкзак с усиленной строчкой и материалами для дополнительной защиты ваших вещей. Сковывает при беге, но зато защищает спину и бока от ударов и сохраняет тепло!
 
 ent-CP14ClothingBackBackpackCargo = грузовая сумка
-    .desc = Утилитарная грузовая сумка, предназначенная для тяжелых условий эксплуатации. Удобна для переноски и хранения рабочих вещей.
+    .desc = Утилитарная грузовая сумка для тяжелых условий эксплуатации. Удобна для переноски и хранения рабочих принадлежностей.
 
-ent-CP14ClothingBackSatchelT0 = подсумок
-    .desc = Небольшой базовый подсумок для переноски предметов первой необходимости. Можно носить на поясе или через плечо.
+ent-CP14ClothingBackSatchelT0 = сумка
+    .desc = Небольшая сумка для переноски необходимых вещей. Можно носить на поясе или через плечо.
 
 ent-CP14ClothingBackSatchelT1 = деревенская сумка
-    .desc = Кожаная сумка ручной работы с деревенским шармом. Обеспечивает скромное хранение с традиционным стилем. Можно носить на поясе или через плечо. Мешает спринту.
+    .desc = Ручная кожаная сумка с деревенским шармом. Обеспечивает скромное хранилище в традиционном стиле. Можно носить на поясе или через плечо.
 
 ent-CP14ClothingBackSatchelT2 = курьерская сумка
-    .desc = Профессиональная сумка, предназначенная для курьеров, с организованными отделениями для быстрого доступа. Мешает спринту.
+    .desc = Профессиональная сумка, разработанная для курьеров, с организованными отделениями для быстрого доступа.
 
 ent-CP14ClothingBackSatchelT3 = вещмешок
-    .desc = Прочный вещмешок военного образца с большой вместимостью, предназначенный для длительного использования в полевых условиях. Мешает спринту.
+    .desc = Прочный вещмешок с большой вместимостью, предназначенный для длительного использования в полевых условиях. Незначительно стесняет движения, но зато может прикрыть спину.
 
-ent-CP14ClothingBackSatchelReinforced = усиленный вещмешок
-    .desc = Прочный вещмешок с усиленными швами и влагостойкими материалами для тяжелых условий. Мешает спринту.
+ent-CP14ClothingBackSatchelReinforced = укрепленная сумка
+    .desc = Прочная сумка с усиленными швами и водостойкими материалами для тяжелых условий.
 
 ent-CP14ClothingBeltPouchPotions = подсумок для зелий
     .desc = Мешочек для хранения зелий - здесь они точно не разобьются.
@@ -824,6 +835,9 @@ ent-CP14ClothingCloakYellowSyurko = жёлтый сюртук
 ent-CP14ClothingCloakAristocraticCloak = аристократический плащ
     .desc = Аристократическое красное пальто с меховым воротником, очень дорогое, очень крутое, немного неудобное.
 
+ent-CP14ClothingCloakHaori = хаори
+    .desc = Традиционная просторная куртка путешественника из дальних стран.
+
 ent-CP14ClothingCloakGuardBase = накидка стражи
     .desc = Наплечная накидка в стандартных цветах Имперской гвардии.
 
@@ -832,6 +846,9 @@ ent-CP14ClothingCloakGuardBlue = { ent-CP14ClothingCloakGuardBase }
 
 ent-CP14ClothingCloakGuardSyurko = сюртук стражи
     .desc = Длинный и просторный сюртук, который служит для защиты доспехов.
+
+ent-CP14ClothingCloakGuardInvestigator = плащ дознавателя
+    .desc = Плащи, которые разрешено носить только старшим дознавателям, служащим империи.
 
 ent-CP14ClothingCloakGuardCommander = бронированный плащ командира гвардии
     .desc = Это чрезвычайно прочная и легкая накидка, разработанная специально для командиров Имперской гвардии.
@@ -1001,9 +1018,22 @@ ent-CP14ClothingHeadJagermeisterHat = шапка егермейстера
 ent-CP14ClothingHeadStrawHat = соломенная шляпа
     .desc = Легко сделать, не жалко потерять.
 
+ent-CP14ClothingHeadKasaHat = фермерская шляпа
+    .desc = Добро пожаловать на рисовые поля, искатель приключений!
+
 ent-CP14ClothingHeadGuardBase = шлем
 
 ent-CP14ClothingHeadGuardHelmet = шлем стражи
+
+ent-CP14ClothingHeadGuardCorinthianHelmet = коринфский шлем
+
+ent-CP14ClothingHeadGuardCap = шлем стража
+
+ent-CP14ClothingHeadGuardFedora = федора стража
+
+ent-CP14ClothingHeadGuardTriangular = треугольная шляпа стража
+
+ent-CP14ClothingHeadGuardInvestigatorHelmet = шлем дознавателя
 
 ent-CP14ClothingHeadGildmaster = шляпа гильдмастера
     .desc = Знак безграничного опыта и чести.
@@ -1195,6 +1225,9 @@ ent-CP14ClothingPantsJestersPantaloons = шутовские панталоны
 ent-CP14ClothingPantsJagermeisterTrousers = брюки егермейстера
     .desc = { ent-CP14ClothingPantsBase.desc }
 
+ent-CP14ClothingPantsHakama = хакама
+    .desc = Традиционные длинные брюки путешественника из дальних стран.
+
 ent-CP14ClothingPantsGuardsChainmailSkirt = кольчужная юбка стражи
     .desc = Юбка с вшитой подкладкой из кольчуги, окрашенная в стандартные цвета униформы Имперской гвардии.
 
@@ -1371,7 +1404,7 @@ ent-CP14ClothingShoesJestersRingers = шутовские звонари
     .desc = Все вокруг должны знать, что ты существуешь, приятель.
 
 ent-CP14ClothingShoesArtifactFrogs = жаботапы
-    .desc = Для любителей сред
+    .desc = Для любителей среды.
     .suffix = Артефакт
 
 ent-CP14ClothingShoesPinkSlippers = розовые тапочки
@@ -1455,6 +1488,8 @@ ent-CP14SpawnPointGuardCommander = командир стражи
 
 ent-CP14SpawnPointGuard = стража
 
+ent-CP14SpawnPointInvestigator = дознаватель
+
 ent-CP14SpawnPointAdventurer = авантюрист
     .desc = { ent-CP14SpawnPointJobBase.desc }
 
@@ -1500,6 +1535,10 @@ ent-CP14SpawnMobMonsterInvisibleWhistler = спавнер невидимого �
 
 ent-CP14SpawnMobMonsterFlem = спавнер флема
 
+ent-CP14SpawnMobFairy = спавнер феи
+
+ent-CP14SpawnMobBigBear = спавнер большого медведя
+
 ent-CP14SpawnUniqueBase = спавнер уникальных предметов
 
 ent-CP14SpawnUniqueArtifact = случайный спавнер артефактов
@@ -1526,6 +1565,10 @@ ent-CP14BiomeSpawnerCave = { ent-CP14BaseBiomeSpawner }
 ent-CP14BiomeSpawnerCaveEmpty = { ent-CP14BaseBiomeSpawner }
     .desc = { ent-CP14BaseBiomeSpawner.desc }
     .suffix = Пещера открытая
+
+ent-CP14BiomeSpawnerCaveGeneric = { ent-CP14BaseBiomeSpawner }
+    .desc = { ent-CP14BaseBiomeSpawner.desc }
+    .suffix = Пещера обычная
 
 ent-CP14BiomeSpawnerForest = { ent-CP14BaseBiomeSpawner }
     .desc = { ent-CP14BaseBiomeSpawner.desc }
@@ -1559,6 +1602,10 @@ ent-CP14BiomeSpawnerWastelands = { ent-CP14BaseBiomeSpawner }
     .desc = { ent-CP14BaseBiomeSpawner.desc }
     .suffix = Пустоши
 
+ent-CP14BiomeSpawnerCavesMushroom = { ent-CP14BaseBiomeSpawner }
+    .desc = { ent-CP14BaseBiomeSpawner.desc }
+    .suffix = Грибная пещера
+
 ent-CP14SpawnerDemiplaneLootT1 = Демиплан T1 Loot
 
 ent-CP14SpawnerDemiplaneLootT2 = Демиплан T2 Loot
@@ -1585,6 +1632,10 @@ ent-CP14MobSheep = овца
     .desc = Белая и пушистая, как овечка из облака.
     .suffix = AI
 
+ent-CP14MobBigBear = большой медведь
+    .desc = Большой, злобный медведь. Возможно, он не выспался.
+    .suffix = AI
+
 ent-CP14MobDino = дино
     .suffix = AI
 
@@ -1595,6 +1646,13 @@ ent-CP14MobDinoYumkaraptor = юмкараптор
 ent-CP14MobDinoSmallHydra = малая гидра
     .desc = Небольшая двухголовая ящерица, несмотря на свои размеры, может быть довольно опасной.
     .suffix = AI
+
+ent-CP14MobFairy = фея
+    .desc = Оно светится, пищит и считает себя очень важным. Похоже, что обычное оружие не способно убить её, и помочь может только расщепление магии.
+    .suffix = AI
+
+ent-CP14ActionFairyManaConsume = Выкачивание маны феи
+    .desc = Вы поглощаете небольшое количество маны у цели.
 
 ent-CP14MobMonsterFlem = флем
     .desc = Странная рыба, стоящая на двух корявых ногах. Вы знаете, что это значит...
@@ -1895,12 +1953,19 @@ ent-CP14GuidebookBase = { ent-CP14BookBase }
 ent-CP14BookGuildMoral = Гильдейская мораль авантюриста
     .desc = Книга, в которой записаны неофициальные правила, принятые среди авантюристов.
 
+ent-CP14BookTieflingGambit = Гамбит Тифлинга
+    .desc = Правила игры в кости, созданные Каллистой Зянур.
+
 ent-CP14GuidebookImperialLaws = имперские законы
     .desc = Книга об императорских законах.
     .suffix = Путеводитель
 
 ent-CP14GuidebookAlchemy = справочник ахимика
     .desc = Тайны жидкостей и магии скрыты в этой книге.
+    .suffix = Путеводитель
+
+ent-CP14GuidebookCooking = поварная книга
+    .desc = Книга про готовку, написанная неизвестной сильвой-трактиршей
     .suffix = Путеводитель
 
 ent-CP14GuidebookDemiplanes = руководство по исследованию демиплана
@@ -1911,8 +1976,75 @@ ent-CP14BookRandom = { ent-CP14BookWriteableBase }
     .desc = Каждая книга уникальна! Что спрятано в этой?
     .suffix = Случайный визуал
 
-ent-CP14GreenBottle = зеленая бутылка
-    .desc = Зеленая бутылка, идеально подходит для пива.
+ent-CP14FloorTileItemBase = ковёр
+    .desc = Свёрнутый ковёр для удобной транспортировки.
+
+ent-CP14FloorCarpetItemBlue1 = синий ковёр
+    .desc = { ent-CP14FloorTileItemBase.desc }
+    .suffix = Синий
+
+ent-CP14FloorCarpetItemRed1 = красный ковёр
+    .desc = { ent-CP14FloorTileItemBase.desc }
+    .suffix = Красный
+
+ent-CP14FloorCarpetItemCyan1 = бирюзовый ковёр
+    .desc = { ent-CP14FloorTileItemBase.desc }
+    .suffix = Бирюзовый
+
+ent-CP14FloorCarpetItemGreen1 = зелёный ковёр
+    .desc = { ent-CP14FloorTileItemBase.desc }
+    .suffix = Зелёный
+
+ent-CP14FloorCarpetItemOrange1 = оранжевый ковёр
+    .desc = { ent-CP14FloorTileItemBase.desc }
+    .suffix = Оранжевый
+
+ent-CP14FloorCarpetItemPurple1 = фиолетовый ковёр
+    .desc = { ent-CP14FloorTileItemBase.desc }
+    .suffix = Фиолетовый
+
+ent-CP14FloorCarpetItemBlack1 = чёрный ковёр
+    .desc = { ent-CP14FloorTileItemBase.desc }
+    .suffix = Чёрный
+
+ent-CP14FloorCarpetItemYellow1 = жёлтый ковёр
+    .desc = { ent-CP14FloorTileItemBase.desc }
+    .suffix = Жёлтый
+
+ent-CP14FloorCarpetItemBlue10 = { ent-CP14FloorCarpetItemBlue1 }
+    .desc = { ent-CP14FloorTileItemBase.desc }
+    .suffix = Синий 10
+
+ent-CP14FloorCarpetItemRed10 = { ent-CP14FloorCarpetItemRed1 }
+    .desc = { ent-CP14FloorTileItemBase.desc }
+    .suffix = Красный 10
+
+ent-CP14FloorCarpetItemCyan10 = { ent-CP14FloorCarpetItemCyan1 }
+    .desc = { ent-CP14FloorTileItemBase.desc }
+    .suffix = Бирюзовый 10
+
+ent-CP14FloorCarpetItemGreen10 = { ent-CP14FloorCarpetItemGreen1 }
+    .desc = { ent-CP14FloorTileItemBase.desc }
+    .suffix = Зелёный 10
+
+ent-CP14FloorCarpetItemOrange10 = { ent-CP14FloorCarpetItemOrange1 }
+    .desc = { ent-CP14FloorTileItemBase.desc }
+    .suffix = Оранжевый 10
+
+ent-CP14FloorCarpetItemPurple10 = { ent-CP14FloorCarpetItemPurple1 }
+    .desc = { ent-CP14FloorTileItemBase.desc }
+    .suffix = Фиолетовый 10
+
+ent-CP14FloorCarpetItemBlack10 = { ent-CP14FloorCarpetItemBlack1 }
+    .desc = { ent-CP14FloorTileItemBase.desc }
+    .suffix = Чёрный 10
+
+ent-CP14FloorCarpetItemYellow10 = { ent-CP14FloorCarpetItemYellow1 }
+    .desc = { ent-CP14FloorTileItemBase.desc }
+    .suffix = Жёлтый 10
+
+ent-CP14GreenBottle = зелёная бутылка
+    .desc = Зелёная бутылка, идеально подходящая для пива.
     .suffix = Пустая
 
 ent-CP14BlueBottle = синяя бутылка
@@ -1930,6 +2062,22 @@ ent-CP14OrangeBottle = оранжевая бутылка
 ent-CP14RedBottle = красная бутылка
     .desc = Красная бутылка, идеально подходит для вина.
     .suffix = Пустая
+
+ent-CP14DrinkBaseGoblet = кубок
+    .desc = Металлический кубок для тех, кто хочет пить изысканно.
+
+ent-CP14SteelGobletIron = железный кубок
+    .desc = { ent-CP14DrinkBaseGoblet.desc }
+
+ent-CP14SteelGobletCopper = медный кубок
+    .desc = { ent-CP14DrinkBaseGoblet.desc }
+
+ent-CP14SteelGobletGold = золотой кубок
+    .desc = Кубок из чистого золота, демонстрирующий богатство его владельца.
+
+ent-CP14SteelGobletBottomless = бездонный кубок
+    .desc = Драгоценный кубок, заколдованный так, чтобы не иметь дна, подходящий для бесконечного королевского банкета.
+    .suffix = Артефакт
 
 ent-CP14DrinkBaseMug = кружка
 
@@ -1953,6 +2101,30 @@ ent-CP14FoodCheesePart = сыр
 
 ent-CP14FoodCheeseSlice = долька сыра
     .desc = Тонкий ломтик вкусно пахнущего сыра.
+
+ent-CP14FoodBlueCheeseWheel = колесо голубого сыра
+    .desc = Сыр с характерными голубыми прожилками. Сильный аромат!
+
+ent-CP14FoodBlueCheesePart = кусочек голубого сыра
+    .desc = Треугольник острого сыра с голубой плесенью.
+
+ent-CP14FoodBlueCheeseSlice = ломтик голубого сыра
+    .desc = Тонкий ломтик острого голубого сыра.
+
+ent-CP14FoodAgedCheeseWheel = колесо выдержанного сыра
+    .desc = Твердый сыр, выдержанный в течение нескольких месяцев для приобретения насыщенного вкуса.
+
+ent-CP14FoodAgedCheesePart = кусочек выдержанного сыра
+    .desc = Треугольник выдержанного сыра с насыщенным вкусом.
+
+ent-CP14FoodAgedCheeseSlice = ломтик выдержанного сыра
+    .desc = Тонкий ломтик ароматного выдержанного сыра.
+
+ent-CP14Fork = вилка
+    .desc = Тысячи лет прогресса, и вот результат: Вилка.
+
+ent-CP14Spoon = ложка
+    .desc = Он считается первым инструментом для принятия пищи, не считая рук.
 
 ent-CP14FoodDoughLarge = большой кусок теста
     .desc = Идеальный ингредиент для любого мучного изделия. Остается только придать ему форму.
@@ -1982,6 +2154,9 @@ ent-CP14Eggshells = яичная скорлупа
 
 ent-CP14FoodEgg = яйцо
     .desc = { ent-CP14FoodEggBase.desc }
+
+ent-CP14FoodEggCooked = варёное яйцо
+    .desc = { ent-CP14FoodEgg.desc }
 
 ent-CP14FoodMeatBase = мясо
 
@@ -2102,43 +2277,6 @@ ent-CP14FoodMeatFlemLeg = сырая нога флема
 ent-CP14FoodMeatFlemLegCooked = рыбные палочки
     .desc = Как картошка-фри. Но рыба!
 
-ent-CP14FoodPieBase = пирог
-
-ent-CP14FoodPieBaseRaw = сырой пирог
-
-ent-CP14FoodPieAppleRaw = сырой яблочный пирог
-    .desc = Сырое тесто с яблоками - это то, что вам сейчас не стоит есть.
-
-ent-CP14FoodPieApple = яблочный пирог
-    .desc = Яблочный пирог манит вас своим ароматом.
-
-ent-CP14FoodPieMeatRaw = сырой мясной пирог
-    .desc = Сырое тесто с сырым мясом - не самое лучшее блюдо на данный момент.
-
-ent-CP14FoodPieMeat = мясной пирог
-    .desc = О, этот чудесный аромат хлеба и мяса, я бы съел его прямо сейчас.
-
-ent-CP14FoodPieFishRaw = сырой рыбный пирог
-    .desc = Сырое тесто с сырой рыбой..... Где они взяли рыбу?!
-
-ent-CP14FoodPieFish = рыбный пирог
-    .desc = Рыбный пирог - хорошая альтернатива мясным блюдам.
-
-ent-CP14FoodPiePumpkinRaw = сырой тыквенный пирог
-    .desc = Сырое тесто с тыквой может стать восхитительно ароматным блюдом.
-
-ent-CP14FoodPiePumpkin = тыквенный пирог
-    .desc = Вкусный тыквенный пирог с поджаристой корочкой снаружи.
-
-ent-CP14FoodPieBurnt = сгоревший пирог
-    .desc = Пирог подгорел и представляет собой горелую и несъедобную массу. Лучше это вычистить ножом.
-
-ent-CP14Plate = тарелка
-    .desc = Это ваша тарелка для вкусной еды!
-
-ent-CP14PlatePie = пирожковая тарелка
-    .desc = Форма для приготовления вкусного пирога.
-
 ent-CP14FoodCabbage = капуста
     .desc = Зеленый съедобный шарик
 
@@ -2157,6 +2295,9 @@ ent-CP14FoodPotato = картошка
 ent-CP14FoodCucumber = огурец
     .desc = Продолговатый зеленый овощ. Освежает!
 
+ent-CP14FoodCucumberSlice = кусочек огурца
+    .desc = Равномерно нарезанный огурец, все еще зеленый и сочный.
+
 ent-CP14FoodTomatoesSlice = срез помидора
     .desc = Тонкий ломтик красного помидора. Их уже не так приятно бросать в людей, как целые помидоры.
 
@@ -2169,11 +2310,63 @@ ent-CP14FoodAppleSlice = яблочная долька
 ent-CP14FoodPepper = перец
     .desc = Красный и сладковатый.
 
+ent-CP14FoodPepperSlice = ломтик перца
+    .desc = Всё так же красный и сладковатый.
+
 ent-CP14FoodOnion = лук
     .desc = Если съесть слишком много, можно расплакаться от радости.
 
-ent-CP14FoodSaladGreen = зелёный салат
-    .desc = Очень питательный зеленый салат с тыквенной ноткой.
+ent-CP14FoodOnionSlice = луковое колечко
+    .desc = Более терпимые и легкие для употребления луковые кольца.
+
+ent-CP14BowlBase = миска
+    .desc = Это ваша миска для вкусного супа!
+
+ent-CP14BowlWooden = деревянная миска
+    .desc = { ent-CP14BowlBase.desc }
+
+ent-CP14BowlIron = железная миска
+    .desc = { ent-CP14BowlBase.desc }
+
+ent-CP14BowlGold = золотая миска
+    .desc = { ent-CP14BowlBase.desc }
+
+ent-CP14BowlCopper = медная миска
+    .desc = { ent-CP14BowlBase.desc }
+
+ent-CP14BowlWoodenRandom = { ent-CP14BowlWooden }
+    .desc = { ent-CP14BowlWooden.desc }
+    .suffix = Случайная еда
+
+ent-CP14FoodPiePieceBase = пирог
+
+ent-CP14FoodPiePieceTrash = кусок отвратительного пирога
+    .desc = Снаружи он выглядит привлекательно и аппетитно, но внутри просто ужасен.
+
+ent-CP14FoodPiePieceMeat = кусок мясного пирога
+    .desc = Пирог с сочным мясом.
+
+ent-CP14FoodPiePiecePumpkin = кусок тыквенного пирога
+    .desc = Тыквенный пирог. Сладкий и нежный.
+
+ent-CP14FoodPiePieceVeg = кусок овощного пирога
+    .desc = Овощи и зелень внутри.
+
+ent-CP14PlateBase = тарелка
+    .desc = Это ваша тарелка для вкусного обеда!
+
+ent-CP14PlateWooden = деревянная тарелка
+    .desc = { ent-CP14PlateBase.desc }
+
+ent-CP14PlateIron = железная тарелка
+    .desc = { ent-CP14PlateBase.desc }
+
+ent-CP14PlateGold = золотая тарелка
+    .desc = { ent-CP14PlateBase.desc }
+
+ent-CP14PlateWoodenRandom = { ent-CP14PlateWooden }
+    .desc = { ent-CP14PlateWooden.desc }
+    .suffix = Случайная еда
 
 ent-CP14SmokingPipe = курительная трубка
     .desc = Удобная и практичная курительная трубка, последняя мода в Империи.
@@ -2190,23 +2383,23 @@ ent-CP14BaseCoin = монета
 
 ent-CP14CopperCoin = медная монета
     .desc = Монета самого мелкого номинала. Медь.
-    .suffix = 10 монет
+    .suffix = 10 монет - торговля
 
 ent-CP14CopperCoin5 = { ent-CP14CopperCoin }
     .desc = { ent-CP14CopperCoin.desc }
-    .suffix = 5 монет
+    .suffix = 5 монет - торговля
 
 ent-CP14CopperCoin1 = { ent-CP14CopperCoin }
     .desc = { ent-CP14CopperCoin.desc }
-    .suffix = 1 монета
+    .suffix = 1 монета - торговля
 
 ent-CP14SilverCoin = серебрянная монета
     .desc = Ценная монета, изготовленная из точно выверенного серебряного сплава..... и чего-то еще. Равна по стоимости десяти медякам.
-    .suffix = 10 монет
+    .suffix = 10 монет - торговля
 
 ent-CP14SilverCoin5 = { ent-CP14SilverCoin }
     .desc = { ent-CP14SilverCoin.desc }
-    .suffix = 5 монет
+    .suffix = 5 монет - торговля
 
 ent-CP14SilverCoin1 = { ent-CP14SilverCoin }
     .desc = { ent-CP14SilverCoin.desc }
@@ -2214,27 +2407,27 @@ ent-CP14SilverCoin1 = { ent-CP14SilverCoin }
 
 ent-CP14GoldCoin = золотая монета
     .desc = Золотая, большая, красивая монета. Достаточно ценная, чтобы ее могли украсть разбойники. Равна по стоимости десяти серебряным монетам.
-    .suffix = 10 монет
+    .suffix = 10 монет - торговля
 
 ent-CP14GoldCoin5 = { ent-CP14GoldCoin }
     .desc = { ent-CP14GoldCoin.desc }
-    .suffix = 5 монет
+    .suffix = 5 монет - торговля
 
 ent-CP14GoldCoin1 = { ent-CP14GoldCoin }
     .desc = { ent-CP14GoldCoin.desc }
-    .suffix = 1 монета
+    .suffix = 1 монета - торговля
 
 ent-CP14PlatinumCoin = платиновая монета
     .desc = Платиновая монета? Это такая редкость. Десять золотых монет стоят как одна.
-    .suffix = 10 монет
+    .suffix = 10 монет - торговля
 
 ent-CP14PlatinumCoin5 = { ent-CP14PlatinumCoin }
     .desc = { ent-CP14PlatinumCoin.desc }
-    .suffix = 5 монет
+    .suffix = 5 монет - торговля
 
 ent-CP14PlatinumCoin1 = { ent-CP14PlatinumCoin }
     .desc = { ent-CP14PlatinumCoin.desc }
-    .suffix = 1 монета
+    .suffix = 1 монета - торговля
 
 ent-CP14BaseJewelry = украшение
 
@@ -2269,8 +2462,28 @@ ent-CP14TradeContractThaumaturgy = { ent-CP14TradeContractBase }
     .suffix = Тауматургия
 
 ent-CP14TradeContractHomeDecor = { ent-CP14TradeContractBase }
-    .desc = Торговый контракт с магазином «Уютный дом». Позволяет покупать различные украшения и милые вещицы для обустройства дома.
+    .desc = Торговый контракт с магазином "Уютный дом". Позволяет покупать различные украшения и милые вещицы для обустройства дома.
     .suffix = Декор дома
+
+ent-CP14TradeContractHorticulture = { ent-CP14TradeContractBase }
+    .desc = Торговый контракт с "Консорциумом садоводства". Позволяет приобретать семена, растения и садовые инструменты.
+    .suffix = Садоводство
+
+ent-CP14TradeContractButchers = { ent-CP14TradeContractBase }
+    .desc = Торговый контракт с "Союзом мастеров-мясников". Позволяет приобретать свежие мясные продукты и оборудование для разделки туш.
+    .suffix = Мясники
+
+ent-CP14TradeContractDairy = { ent-CP14TradeContractBase }
+    .desc = Торговый контракт с молочной фермой "Золотое вымя". Позволяет приобретать свежие молочные продукты и яйца.
+    .suffix = Молочные продукты
+
+ent-CP14TradeContractTailors = { ent-CP14TradeContractBase }
+    .desc = Торговый контракт с "Гильдией шелковых и игольных портных". Позволяет приобретать ткани, одежду и инструменты для пошива.
+    .suffix = Портные
+
+ent-CP14TradeContractGuards = { ent-CP14TradeContractBase }
+    .desc = Торговый контракт с "Имперской стражей". Позволяет приобретать предметы, важные для поддержания правопорядка.
+    .suffix = Стража
 
 ent-CP14Wallet = кошель
     .desc = Небольшой кошель, удобный для хранения монет.
@@ -2292,7 +2505,7 @@ ent-CP14Cotton = хлопок
 
 ent-CP14WildProduceBase = растение
 
-ent-CP14BloodFlower = кровавая роза
+ent-CP14BloodFlower = кровоцвет
     .desc = Алые цветы растут там, где пролилась кровь.
 
 ent-CP14AgaricMushroom = мухомор
@@ -2307,14 +2520,17 @@ ent-CP14WildSage = шалфей
 ent-CP14LumiMushroom = люмигриб
     .desc = Слабо светящийся гриб. Часто используется алхимиками как средство для концентрации растворов.
 
-ent-CP14BlueAmanita = лазурная Аманита
+ent-CP14BlueAmanita = лазурная аманита
     .desc = Небесно-голубой цветок, известный своими лечебными и магическими свойствами.
 
-ent-CP14Dayflin = желтый днецвет
+ent-CP14Dayflin = жёлтый днецвет
     .desc = Желтый солнечный цветок, пахнущий топленым молоком. Может быть переработан в желтый краситель.
 
 ent-CP14AirLily = воздушная лилия
     .desc = Легкий, нежный и воздушный цветок. Говорят, что его особые свойства позволяют людям даже дышать под водой...
+
+ent-CP14SilverNeedle = серебряная игла
+    .desc = Ярко-оранжевые ягоды морозостойкого растения. Широко используются в медицине.
 
 ent-CP14BaseDice = дайс
 
@@ -2323,36 +2539,6 @@ ent-CP14d20Dice = d20
 
 ent-CP14d6Dice = d6
     .desc = Костяной кубик для настольных игр.
-
-ent-CP14HumanPlushie = плюшевый человек
-    .desc = Чем проще - тем лучше!
-
-ent-CP14DwarfPlushie = плюшевый дворф
-    .desc = Крепкий как камень и алкоголь... Неплохой собутыльник и бутылка.
-
-ent-CP14ElfPlushie = плюшевый эльф
-    .desc = Неясно, мужчина это или женщина... Но в этой штуке может содержаться немного маны!
-
-ent-CP14GoblinPlushie = плюшевый гоблин
-    .desc = Этот маленький хитрец... Кажется, в него можно положить монетку, но не ясно, удасться ли её вернуть!
-
-ent-CP14TieflingPlushie = плюшевый тифлинг
-    .desc = Горячо красив...
-
-ent-CP14SilvaPlushie = плюшевая сильва
-    .desc = Маленький, симпатичный кустик! Любит семена, и может последить за вашей фермой.
-
-ent-CP14CarcatPlushie = плюшевый каркат
-    .desc = Очаровательная мордочка! Любит точить когти, разделывать трупы, и когда его гладят...
-
-ent-CP14FrogPlushie = плюшевая лягушка
-    .desc = Квак-квак.
-
-ent-CP14SkeletonPlushie = плюшевый скелет
-    .desc = Эти скелеты мяукают... Странновато...
-
-ent-CP14AgaricPlushie = плюшевый миконид
-    .desc = Какой милый грибочек... Почему он идёт на меня?...
 
 ent-CP14FluteInstrument = флейта
     .desc = Компактный музыкальный духовой инструмент, популярный как в деревнях, так и в больших музыкальных труппах.
@@ -2365,6 +2551,32 @@ ent-CP14LuteInstrument = лютня
 
 ent-SkeletonGuitarInstrument = скелютня
     .desc = Настоящее оружие для брутальных рок-скелетов. Что означает слово «рок»?
+
+ent-CP14BasePlushie = плюшевая игрушка
+
+ent-CP14HumanPlushie = плюшевый человек
+    .desc = Чем проще - тем лучше!
+
+ent-CP14DwarfPlushie = плюшевый дворф
+    .desc = Крепкий как камень и алкоголь... Неплохой собутыльник и бутылка.
+
+ent-CP14ElfPlushie = плюшевый эльф
+    .desc = Неясно, мужчина это или женщина... Но в этой штуке может содержаться немного маны!
+
+ent-CP14TieflingPlushie = плюшевый тифлинг
+    .desc = Горячо красив...
+
+ent-CP14CarcatPlushie = плюшевый каркат
+    .desc = Очаровательная мордочка! Любит точить когти, разделывать трупы, и когда его гладят...
+
+ent-CP14FrogPlushie = плюшевая лягушка
+    .desc = Квак-квак.
+
+ent-CP14SkeletonPlushie = плюшевый скелет
+    .desc = Эти скелеты мяукают... Странновато...
+
+ent-CP14AgaricPlushie = плюшевый миконид
+    .desc = Какой милый грибочек... Почему он идёт на меня?...
 
 ent-CP14BaseKey = ключ
     .desc = Небольшой замысловатый кусочек железа, открывающий определенные замки. Не отдавайте кому попало!
@@ -2492,6 +2704,10 @@ ent-CP14KeyDemiplaneCrystal = { ent-CP14KeyGoldBlank }
 ent-CP14KeyTavernMerchantShopAbstract = { ent-CP14KeyIronBlank }
     .desc = { ent-CP14KeyIronBlank.desc }
     .suffix = Абстракт. Магазин торговца
+
+ent-CP14KeyMerchantShopPublic = { ent-CP14KeyCopperBlank }
+    .desc = { ent-CP14KeyCopperBlank.desc }
+    .suffix = Публичный торговый магазин
 
 ent-CP14KeyMerchantShop1 = { ent-CP14KeyIronBlank }
     .desc = { ent-CP14KeyIronBlank.desc }
@@ -2632,6 +2848,18 @@ ent-CP14IronBar10 = { ent-CP14IronBar1 }
     .desc = { ent-CP14IronBar1.desc }
     .suffix = 10
 
+ent-CP14BrassBar1 = латунный слиток
+    .desc = Лучший друг маготехнологий. Секреты его производства остаются в тайне.
+    .suffix = 1
+
+ent-CP14BrassBar5 = { ent-CP14BrassBar1 }
+    .desc = { ent-CP14BrassBar1.desc }
+    .suffix = 5
+
+ent-CP14BrassBar10 = { ent-CP14BrassBar1 }
+    .desc = { ent-CP14BrassBar1.desc }
+    .suffix = 10
+
 ent-CP14GoldBar1 = золотой слиток
     .desc = Теплый на ощупь, мягкий кусок изысканного золота.
 
@@ -2641,17 +2869,6 @@ ent-CP14GoldBar5 = { ent-CP14GoldBar1 }
 
 ent-CP14GoldBar10 = { ent-CP14GoldBar1 }
     .desc = { ent-CP14GoldBar1.desc }
-    .suffix = 10
-
-ent-CP14GlassSheet1 = стеклянный лист
-    .desc = Обработанное кварцевое стекло хорошо пропускает свет, и на него приятно смотреть!
-
-ent-CP14GlassSheet5 = { ent-CP14GlassSheet1 }
-    .desc = { ent-CP14GlassSheet1.desc }
-    .suffix = 5
-
-ent-CP14GlassSheet10 = { ent-CP14GlassSheet1 }
-    .desc = { ent-CP14GlassSheet1.desc }
     .suffix = 10
 
 ent-CP14MithrilBar1 = мифриловый слиток
@@ -2709,11 +2926,19 @@ ent-CP14Ash3 = { ent-CP14Ash1 }
     .desc = { ent-CP14Ash1.desc }
     .suffix = 3
 
-ent-CP14CrystalShardQuartz = кварцевый осколок
-    .desc = Природные кристаллы кварца, способные впитывать магическую энергию окружающего мира.
-
 ent-CP14DimensitCrystal = дименситовый осколок
     .desc = Фрагмент ткани реальности. Чрезвычайно ценный ресурс для тех, кто знает, что с ним делать.
+
+ent-CP14GlassSheet1 = стеклянный лист
+    .desc = Обработанное кварцевое стекло хорошо пропускает свет, и на него приятно смотреть!
+
+ent-CP14GlassSheet5 = { ent-CP14GlassSheet1 }
+    .desc = { ent-CP14GlassSheet1.desc }
+    .suffix = 5
+
+ent-CP14GlassSheet10 = { ent-CP14GlassSheet1 }
+    .desc = { ent-CP14GlassSheet1.desc }
+    .suffix = 10
 
 ent-CP14OreCopper1 = медная руда
     .desc = Кусок бледной, тяжелой меди.
@@ -2758,6 +2983,48 @@ ent-CP14OreMithril5 = { ent-CP14OreMithril1 }
 ent-CP14OreMithril10 = { ent-CP14OreMithril1 }
     .desc = { ent-CP14OreMithril1.desc }
     .suffix = 10
+
+ent-CP14OreCoal1 = уголь
+    .desc = Это уголь! Он очень хорошо горит!
+
+ent-CP14OreCoal5 = { ent-CP14OreCoal1 }
+    .desc = { ent-CP14OreCoal1.desc }
+    .suffix = 5
+
+ent-CP14OreCoal10 = { ent-CP14OreCoal1 }
+    .desc = { ent-CP14OreCoal1.desc }
+    .suffix = 10
+
+ent-CP14CrystalShardQuartz = кварцевый осколок
+    .desc = Природные кристаллы кварца, способные впитывать магическую энергию окружающего мира.
+
+ent-CP14CrystalShardQuartzEarth = terra осколок
+    .desc = { ent-CP14CrystalShardQuartz.desc }
+    .suffix = Земля
+
+ent-CP14CrystalShardQuartzFire = ignis осколок
+    .desc = { ent-CP14CrystalShardQuartz.desc }
+    .suffix = Огонь
+
+ent-CP14CrystalShardQuartzWater = aqua осколок
+    .desc = { ent-CP14CrystalShardQuartz.desc }
+    .suffix = Вода
+
+ent-CP14CrystalShardQuartzAir = aer осколок
+    .desc = { ent-CP14CrystalShardQuartz.desc }
+    .suffix = Воздух
+
+ent-CP14CrystalShardQuartzOrder = ordo осколок
+    .desc = { ent-CP14CrystalShardQuartz.desc }
+    .suffix = Порядок
+
+ent-CP14CrystalShardQuartzChaos = perditio осколок
+    .desc = { ent-CP14CrystalShardQuartz.desc }
+    .suffix = Хаос
+
+ent-CP14CrystalShardQuartzMagic = praecantatio осколок
+    .desc = { ent-CP14CrystalShardQuartz.desc }
+    .suffix = Магия
 
 ent-CP14DirtBlock1 = блок земли
     .desc = Блок великолепной плодородной почвы.
@@ -2817,10 +3084,6 @@ ent-CP14WoodenPlanks1 = деревянные доски
     .desc = Обработанное и готовое к использованию дерево.
     .suffix = 1
 
-ent-CP14BirchWoodenPlanks1 = березовые доски
-    .desc = Обработанное и готовое к использованию дерево.
-    .suffix = 1
-
 ent-CP14WoodenPlanks10 = { ent-CP14WoodenPlanks1 }
     .desc = { ent-CP14WoodenPlanks1.desc }
     .suffix = 10
@@ -2859,96 +3122,47 @@ ent-CP14BirchWoodenPlanks20 = { ent-CP14BirchWoodenPlanks1 }
     .desc = { ent-CP14BirchWoodenPlanks1.desc }
     .suffix = 20
 
+ent-CP14SpruceWoodLog = еловое бревно
+    .desc = { ent-CP14WoodLog.desc }
+
+ent-CP14SpruceWoodenPlanks1 = еловые доски
+    .desc = { ent-CP14WoodenPlanks1.desc }
+    .suffix = 1
+
+ent-CP14SpruceWoodenPlanks10 = { ent-CP14SpruceWoodenPlanks1 }
+    .desc = { ent-CP14SpruceWoodenPlanks1.desc }
+    .suffix = 10
+
+ent-CP14SpruceWoodenPlanks20 = { ent-CP14SpruceWoodenPlanks1 }
+    .desc = { ent-CP14SpruceWoodenPlanks1.desc }
+    .suffix = 20
+
 ent-CP14ClothingJewelleryBase = амулет
 
 ent-CP14ClothingCloakAmuletGold = золотой амулет
     .desc = Золотой амулет, ценная безделушка.
 
 ent-CP14ClothingCloakAmuletMana = странный амулет
-    .desc = Золотой амулет с магическим камнем внутри.
+    .desc = Золотой амулет с волшебным камнем внутри.
 
 ent-CP14Bell = колокольчик
     .desc = Обычный колокольчик с ручкой для привлечения внимания.
 
+ent-CP14CandleBase = свеча
+
 ent-CP14Candle = свеча
     .desc = Тонкий фитиль, продетый через жир.
 
-ent-CP14CandleRed = красная свеча
+ent-CP14CandleIgnited = { ent-CP14Candle }
     .desc = { ent-CP14Candle.desc }
+    .suffix = Зажённый
 
-ent-CP14CandleBlue = синяя свеча
-    .desc = { ent-CP14Candle.desc }
+ent-CP14Candelabra = канделябр
+    .desc = Несколько свечей, красиво размещенных на металлической подставке.
 
-ent-CP14CandleBlack = черная свеча
-    .desc = { ent-CP14Candle.desc }
-
-ent-CP14CandleGreen = зеленая свеча
-    .desc = { ent-CP14Candle.desc }
-
-ent-CP14CandlePurple = фиолетовая свеча
-    .desc = { ent-CP14Candle.desc }
-
-ent-CP14CandleSmall = маленькая свеча
-    .desc = { ent-CP14Candle.desc }
-
-ent-CP14CandleRedSmall = маленькая красная свеча
-    .desc = { ent-CP14CandleSmall.desc }
-
-ent-CP14CandleBlueSmall = маленькая синяя свеча
-    .desc = { ent-CP14CandleSmall.desc }
-
-ent-CP14CandleBlackSmall = маленькая черная свеча
-    .desc = { ent-CP14CandleSmall.desc }
-
-ent-CP14CandleGreenSmall = маленькая зеленая свеча
-    .desc = { ent-CP14CandleSmall.desc }
-
-ent-CP14CandlePurpleSmall = маленькая фиолетовая свеча
-    .desc = { ent-CP14CandleSmall.desc }
-
-ent-CP14CandleInfinite = волшебная свеча
-    .desc = Волшебная свеча, которая никогда не гаснет, пламя кажется холодным и мертвым, но все равно горит.
-    .suffix = Декоративная
-
-ent-CP14CandleRedInfinite = волшебная красная свеча
-    .desc = { ent-CP14CandleInfinite.desc }
-    .suffix = Декоративная
-
-ent-CP14CandleBlueInfinite = волшебная синяя свеча
-    .desc = { ent-CP14CandleInfinite.desc }
-    .suffix = Декоративная
-
-ent-CP14CandleBlackInfinite = волшебная черная свеча
-    .desc = { ent-CP14CandleInfinite.desc }
-    .suffix = Декоративная
-
-ent-CP14CandleGreenInfinite = волшебная зеленая свеча
-    .desc = { ent-CP14CandleInfinite.desc }
-    .suffix = Декоративная
-
-ent-CP14CandlePurpleInfinite = волшебная фиолетовая свеча
-    .desc = { ent-CP14CandleInfinite.desc }
-    .suffix = Декоративная
-
-ent-CP14CandleRedSmallInfinite = маленькая волшебная красная свеча
-    .desc = { ent-CP14CandleInfinite.desc }
-    .suffix = Декоративная
-
-ent-CP14CandleBlueSmallInfinite = маленькая волшебная черная свеча
-    .desc = { ent-CP14CandleInfinite.desc }
-    .suffix = Декоративная
-
-ent-CP14CandleBlackSmallInfinite = маленькая волшебная черная свеча
-    .desc = { ent-CP14CandleInfinite.desc }
-    .suffix = Декоративная
-
-ent-CP14CandleGreenSmallInfinite = маленькая волшебная зеленая свеча
-    .desc = { ent-CP14CandleInfinite.desc }
-    .suffix = Декоративная
-
-ent-CP14CandlePurpleSmallInfinite = маленькая волшебная фиолетовая свеча
-    .desc = { ent-CP14CandleInfinite.desc }
-    .suffix = Декоративная
+ent-CP14CandelabraIgnited = { ent-CP14Candelabra }
+    .desc = { ent-CP14Candelabra.desc }
+    .suffix = Зажённый
 
 ent-CP14Crayon = мелок
     .desc = Цветной мелок для рисования.
@@ -3052,14 +3266,17 @@ ent-CP14ModularGripLong = длинная рукоять
 ent-CP14ModularGripWooden = деревянная рукоять
     .desc = { ent-CP14ModularGripShort.desc }
 
-ent-CP14ModularGripBirch = березовая рукоять
+ent-CP14ModularGripLucens = люценовая рукоять
     .desc = { ent-CP14ModularGripShort.desc }
 
-ent-CP14ModularGripLucens = люценовая рукоять
+ent-CP14ModularGripBirch = берёзовая рукоять
     .desc = { ent-CP14ModularGripShort.desc }
 
 ent-CP14ModularGripIron = железная рукоять
     .desc = { ent-CP14ModularGripShort.desc }
+
+ent-CP14ModularGripIronGuard = { ent-CP14ModularGripIron }
+    .desc = { ent-CP14ModularGripIron.desc }
 
 ent-CP14ModularGripGolden = золотая рукоять
     .desc = { ent-CP14ModularGripShort.desc }
@@ -3076,10 +3293,10 @@ ent-CP14ModularGripGuildmaster = рукоять рапиры гильдмаст�
 ent-CP14ModularGripWoodenLong = длинная деревянная рукоять
     .desc = { ent-CP14ModularGripLong.desc }
 
-ent-CP14ModularGripBirchLong = длинная березовая рукоять
+ent-CP14ModularGripLucensLong = длинная люценовая рукоять
     .desc = { ent-CP14ModularGripLong.desc }
 
-ent-CP14ModularGripLucensLong = длинная люценовая рукоять
+ent-CP14ModularGripBirchLong = длинная берёзовая рукоять
     .desc = { ent-CP14ModularGripLong.desc }
 
 ent-CP14ModularGripIronLong = длинная железная рукоять
@@ -3119,6 +3336,9 @@ ent-CP14ModularBladeCopperAxe = медная головка топора
     .desc = { ent-CP14ModularBladeAxeBase.desc }
 
 ent-CP14ModularBladeMithrilAxe = мифриловая головка топора
+    .desc = { ent-CP14ModularBladeAxeBase.desc }
+
+ent-CP14ModularBladeWoodenAxe = деревянная головка топора
     .desc = { ent-CP14ModularBladeAxeBase.desc }
 
 ent-CP14ModularBladeDaggerBase = лезвие кинжала
@@ -3220,6 +3440,9 @@ ent-CP14ModularBladeCopperRapier = медное лезвие рапиры
 ent-CP14ModularBladeMithrilRapier = мифриловое лезвие рапиры
     .desc = { ent-CP14ModularBladeRapierBase.desc }
 
+ent-CP14ModularBladeWoodenRapier = деревянное лезвие рапиры
+    .desc = { ent-CP14ModularBladeRapierBase.desc }
+
 ent-CP14ModularBladeShovelBase = лезвие лопаты
     .desc = Лезвие лопаты без рукояти. Кузнец может использовать его как запасную часть для создания инструмента.
 
@@ -3280,6 +3503,9 @@ ent-CP14ModularBladeCopperSpear = медный наконечник копья
 ent-CP14ModularBladeMithrilSpear = мифриловый наконечник копья
     .desc = { ent-CP14ModularBladeSpearBase.desc }
 
+ent-CP14ModularBladeWoodenSpear = деревянный наконечник копья
+    .desc = { ent-CP14ModularBladeSpearBase.desc }
+
 ent-CP14ModularBladeSwordBase = лезвие меча
     .desc = Лезвие меча без рукояти. Кузнец может использовать это, чтобы сделать оружие.
 
@@ -3296,6 +3522,9 @@ ent-CP14ModularBladeMithrilSword = мифриловое лезвие меча
     .desc = { ent-CP14ModularBladeSwordBase.desc }
 
 ent-CP14ModularBladeBoneSword = костяное лезвие меча
+    .desc = { ent-CP14ModularBladeSwordBase.desc }
+
+ent-CP14ModularBladeWoodenSword = деревянное лезвие меча
     .desc = { ent-CP14ModularBladeSwordBase.desc }
 
 ent-CP14ModularGardeBase = гарда
@@ -3316,6 +3545,9 @@ ent-CP14ModularGardeSharpCopper = острая медная гарда
 ent-CP14ModularGardeSharpMithril = острая мифриловая гарда
     .desc = { ent-CP14ModularGardeBase.desc }
 
+ent-CP14ModularGardeSharpWooden = острая деревянная гарда
+    .desc = { ent-CP14ModularGardeBase.desc }
+
 ent-CP14ModularGardeSturdyIron = прочная железная гарда
     .desc = { ent-CP14ModularGardeBase.desc }
 
@@ -3326,6 +3558,9 @@ ent-CP14ModularGardeSturdyCopper = прочная медная гарда
     .desc = { ent-CP14ModularGardeBase.desc }
 
 ent-CP14ModularGardeSturdyMithril = прочная мифриловая гарда
+    .desc = { ent-CP14ModularGardeBase.desc }
+
+ent-CP14ModularGardeSturdyWooden = прочная деревянная гарда
     .desc = { ent-CP14ModularGardeBase.desc }
 
 ent-CP14ModularInlayBase = кварцевая инкрустация
@@ -3405,6 +3640,18 @@ ent-CP14VialMedium = средний флакон
 ent-CP14VialMediumReinforced = укрепленный средний флакон
     .desc = Флакон из армированного стекла для хранения среднего количества жидкости.
 
+ent-CP14VialStar = звёздный флакон
+    .desc = Хрупкая стеклянная ампула в форме звезды, необычная, но символичная форма.
+
+ent-CP14VialStarReinforced = укрепленный звёздный флакон
+    .desc = Укреплённый стеклянный флакон в форме звезды для хранения небольшого количества жидкости.
+
+ent-CP14VialSkull = флакон с черепом
+    .desc = Хрупкий флакон в форме черепа, в котором удобно хранить ядовитые жидкости.
+
+ent-CP14VialSkullReinforced = укрепленный флакон с черепом
+    .desc = Армированный стеклянный флакон в форме черепа для хранения небольшого количества жидкости, теперь яд точно не прольется случайно на кожу.
+
 ent-CP14VialMediumEarthEssence = { ent-CP14VialMedium }
     .desc = { ent-CP14VialMedium.desc }
     .suffix = Terra
@@ -3461,8 +3708,50 @@ ent-CP14VialSmallHealingManaDepletion = мана-лечебное зелье Б�
     .desc = { ent-CP14VialSmall.desc }
     .suffix = Лечение мана-истощения 10%
 
+ent-CP14VialBloodFlowerSap = флакон с соком кровоцвета
+    .desc = Средний флакон, содержащий концентрированный сок кровоцвета.
+
+ent-CP14VialWildSageSap = флакон с соком дикого шалфея
+    .desc = Средний флакон, содержащий концентрированный сок дикого шалфея.
+
+ent-CP14VialYellowDayflinPulp = флакон с мякотью днецвета
+    .desc = Средний флакон, содержащий концентрированную желтую мякоть днецвета.
+
+ent-CP14VialBlueAmanita = флакон с экстрактом лазурной аманиты
+    .desc = Средний флакон, содержащий концентрированный экстракт лазурного аманита.
+
+ent-CP14VialLumiMushroom = флакон с экстрактом люмигриба
+    .desc = Средний флакон, содержащий концентрированный экстракт люмигриба.
+
+ent-CP14VialSilverNeedle = флакон с экстрактом серебряной иглы
+    .desc = Средний флакон, содержащий концентрированный экстракт серебряной иглы.
+
+ent-CP14VialChromiumSlime = флакон с хромиевой слизью
+    .desc = Средний флакон, содержащий концентрированную хромиевую слизь.
+
+ent-CP14VialAgaricMushroom = флакон с экстрактом мухомора
+    .desc = Средний флакон, содержащий концентрированный экстракт мухомора.
+
+ent-CP14VialAirLily = флакон с экстрактом воздушной лилии
+    .desc = Средний флакон, содержащий концентрированный экстракт воздушной лилии.
+
 ent-CP14BaseAlchemyBomb = алхимическая бомба
     .desc = Флакон с жидкостью, который при броске взрывается облаком алхимических реагентов.
+
+ent-CP14CookerBase = кастрюля
+
+ent-CP14CookingPot = кастрюля
+    .desc = Контейнер для приготовления Великого Супа.
+
+ent-CP14FryingPan = сковорода
+    .desc = Вы всегда можете наблюдать за тремя вещами: как горит огонь, как течет вода и как готовится вкусное мясо.
+
+ent-CP14PlatePie = тарелка для пирога
+    .desc = Форма для приготовления вкусного пирога.
+
+ent-CP14PlatePieRandom = { ent-CP14PlatePie }
+    .desc = { ent-CP14PlatePie.desc }
+    .suffix = Случайная еда
 
 ent-CP14GroundTobacco = перемолотый табак
     .desc = Измельченные и высушенные листья табака, некоторые из них напоминают карри.
@@ -3517,9 +3806,6 @@ ent-CP14SeedSage = семена шалфея
 
 ent-CP14SeedCotton = семена хлопка
     .desc = Семена хлопка. Пора выращивать брюки!
-
-ent-CP14GuardBell = сторожевой колокол
-    .desc = Мощный колокол, сообщающий на всё поселение о возможной угрозе.
 
 ent-CP14HerbalBandage = травяной бинт
     .desc = Бинт для перевязки, сплетенный из травы. Не самая надежная и полезная вещь, но лучше, чем ничего.
@@ -3599,6 +3885,9 @@ ent-CP14EssenceCrystal = vitreus
 ent-CP14EssenceMagic = praecantatio
     .desc = { ent-CP14BaseEssence.desc }
 
+ent-CP14EssenceBeast = bestia
+    .desc = { ent-CP14BaseEssence.desc }
+
 ent-CP14RitualChalk = ритуальный мелок
     .desc = Кварцевый мелок, удобный для рисования временных ритуальных кругов.
 
@@ -3619,6 +3908,9 @@ ent-CP14CrystalLampOrangeEmpty = оранжевая кристалльная л�
 
 ent-CP14Lighter = зажигалка
     .desc = Поджигает вещи
+
+ent-CP14HandLabeler = ручной этикетировщик
+    .desc = Ручной этикетировщик, используемый для маркировки предметов и объектов.
 
 ent-CP14Rope = веревка
     .desc = Многофункциональная веревка. Ей можно связать что-нить. Или кого-нибудь.
@@ -3674,6 +3966,10 @@ ent-CP14MagicFireStaff = магический посох огня
     .desc = Длинный, наполовину технологический, наполовину магический посох, предназначенный для преобразования магической энергии в огненные заклинания.
     .suffix = Артефакт
 
+ent-CP14MagicGuardElectroStaff = электрический посох стражи
+    .desc = Длинная палка, наполовину техническая, наполовину магическая, предназначенная для преобразования магической энергии в электрические заклинания.
+    .suffix = Артефакт
+
 ent-CP14MagicDruidStaff = магический посох друида
     .desc = Длинный, наполовину технологический, наполовину магический посох, предназначенный для преобразования магической энергии в заклинания.
 
@@ -3688,6 +3984,9 @@ ent-CP14ModularCopperArrow = медная стрела
 
 ent-CP14ModularIronAxe = железный топор
     .desc = Тяжелый топор для рубки дров или голов.
+
+ent-CP14ModularWoodenAxe = тренировочный деревянный топор
+    .desc = Деревянное тренировочное оружие, удобный инструмент для отработки ударов.
 
 ent-CP14ModularIronDagger = железный кинжал
     .desc = Маленький, многофункциональный, острый клинок. Им можно резать мясо или бросать в гоблинов.
@@ -3719,6 +4018,12 @@ ent-CP14ModularCopperRapier = медная рапира
 ent-CP14ModularGuildmasterRapier = личная рапира гильдмастера
     .desc = Личное оружие, выдаваемое каждому гильдмастеру. Сочетает в себе надежность и убойную силу.
 
+ent-CP14ModularGuardRapier = рапира стражи
+    .desc = Стандартное вооружение императорской стражи. Краткая рапира, украшенная синими перьями и латунью.
+
+ent-CP14ModularWoodenRapier = тренировочная деревянная рапира
+    .desc = Тренировочная деревянная рапира, с которой справится даже полный дилетант.
+
 ent-CP14ModularIronShovel = железная лопата
     .desc = Орудие для вскапывания земли, рытья грядок или могил.
 
@@ -3731,10 +4036,10 @@ ent-CP14ModularIronSkimitar = железный скимитар
 ent-CP14ModularCopperSkimitar = медный скимитар
     .desc = Вам повезет, если он проколет хотя бы бумагу.
 
-ent-CP14ModularCopperSkimitarTundra = Скимитарская Тундра
+ent-CP14ModularCopperSkimitarTundra = скимитар Тундра
     .desc = Золотой стандарт остроконечного оружия. Средняя длина, удобная рукоять. На нем выгравирована надпись «Тундра».
 
-ent-CP14ModularGoldSkimitarAgony = Скимитар Агония
+ent-CP14ModularGoldSkimitarAgony = скимитар Агония
     .desc = Золотой стандарт остроконечного оружия. Средняя длина, удобная рукоять. На нем выгравирована надпись «Агония».
 
 ent-CP14ModularIronSpear = железное копье
@@ -3743,14 +4048,20 @@ ent-CP14ModularIronSpear = железное копье
 ent-CP14ModularIronKunai = железный кунай
     .desc = Эффективное метательное оружие. Бросьте его в стену или, нет, лучше в гоблина!
 
+ent-CP14ModularWoodenSpear = тренировочное деревянное копье
+    .desc = Деревянное копье для тренировок, не сложнее швабры.
+
 ent-CP14ModularIronSword = железный меч
     .desc = Золотой стандарт остроконечного оружия. Средняя длина, удобная рукоять. Без излишеств.
 
 ent-CP14ModularCopperSword = медный меч
     .desc = Вам повезет, если он порежет хотя бы бумагу.
 
-ent-CP14ModularGuardHalberd = алебарда стражника
+ent-CP14ModularGuardHalberd = алебарда стражи
     .desc = Стандартное вооружение имперской гвардии. Длинная железная алебарда, украшенная синими перьями и латунью.
+
+ent-CP14ModularGuardSword = меч стражи
+    .desc = Стандартное вооружение императорской стражи. Короткий меч, украшенный синими перьями и латунью.
 
 ent-CP14ModularSkeletonHalberd = костяная алебарда
     .desc = Ужасное оружие из костей
@@ -3765,6 +4076,9 @@ ent-CP14ModularSkeletonHalberdUpgrade = костяная алебарда
 ent-CP14ModularSkeletonSwordUpgrade = костяной меч
     .desc = Чудовищное оружие из кости.
     .suffix = Усиленный
+
+ent-CP14ModularWoodenSword = тренировочный деревянный меч
+    .desc = Деревянный меч, легкий и простой в использовании, даже полный неумеха сможет им воспользоваться.
 
 ent-CP14BaseBow = лук
 
@@ -4012,6 +4326,12 @@ ent-CP14WoodenDoorFrame = деревянная дверная рама
 ent-CP14WoodenDoorFrameMirrored = { ent-CP14WoodenDoorFrame }
     .desc = { ent-CP14WoodenDoorFrame.desc }
 
+ent-CP14WoodenBirchDoorFrame = деревянная берёзовая дверная рама
+    .desc = Незавершенная деревянная берёзовая дверь.
+
+ent-CP14WoodenBirchDoorFrameMirrored = { ent-CP14WoodenBirchDoorFrame }
+    .desc = { ent-CP14WoodenBirchDoorFrame.desc }
+
 ent-CP14IronDoorFrame = каркас железной двери
     .desc = Незаконченная железная дверь.
 
@@ -4024,6 +4344,14 @@ ent-CP14IronDoorMirrored = { ent-CP14IronDoor }
 
 ent-CP14IronDoorWindowedMirrored = { ent-CP14IronDoorWindowed }
     .desc = { ent-CP14IronDoorWindowed.desc }
+    .suffix = Открыто, Зеркальная
+
+ent-CP14WoodenBirchDoorMirrored = { ent-CP14WoodenBirchDoor }
+    .desc = { ent-CP14WoodenBirchDoor.desc }
+    .suffix = Открыто, Зеркальная
+
+ent-CP14WoodenBirchDoorWindowedMirrored = { ent-CP14WoodenBirchDoorWindowed }
+    .desc = { ent-CP14WoodenBirchDoorWindowed.desc }
     .suffix = Открыто, Зеркальная
 
 ent-CP14WoodenDoorMirrored = { ent-CP14WoodenDoor }
@@ -4089,6 +4417,10 @@ ent-CP14FenceGateBigIronGuildmaster = { ent-CP14FenceGateBigIron }
 ent-CP14FenceGateBigIronDemiplaneCrystal = { ent-CP14FenceGateBigIron }
     .desc = { ent-CP14FenceGateBigIron.desc }
     .suffix = Кристалл Демиплана
+
+ent-CP14WoodenDoorMerchantShopPublic = { ent-CP14WoodenDoor }
+    .desc = { ent-CP14WoodenDoor.desc }
+    .suffix = Публичный торговый магазин
 
 ent-CP14WoodenDoorMerchantShop1 = { ent-CP14WoodenDoor }
     .desc = { ent-CP14WoodenDoor.desc }
@@ -4371,6 +4703,42 @@ ent-CP14FloraTreeBirchLarge = { ent-CP14BaseTree }
     .desc = { ent-CP14BaseTree.desc }
     .suffix = Большой
 
+ent-CP14FloraTreeSpruceSmall = { ent-CP14BaseTree }
+    .desc = { ent-CP14BaseTree.desc }
+    .suffix = Маленький
+
+ent-CP14FloraTreeSpruceMedium = { ent-CP14BaseTree }
+    .desc = { ent-CP14BaseTree.desc }
+    .suffix = Средний
+
+ent-CP14FloraTreeSpruceLarge = { ent-CP14BaseTree }
+    .desc = { ent-CP14BaseTree.desc }
+    .suffix = Большой
+
+ent-CP14MushroomTree1 = гигантский гриб
+    .desc = Вы когда-нибудь слышали, как звучат зараженные грибы?
+
+ent-CP14MushroomTree2 = { ent-CP14MushroomTree1 }
+    .desc = { ent-CP14MushroomTree1.desc }
+
+ent-CP14MushroomTree3 = { ent-CP14MushroomTree1 }
+    .desc = { ent-CP14MushroomTree1.desc }
+
+ent-CP14MushroomTree4 = { ent-CP14MushroomTree1 }
+    .desc = { ent-CP14MushroomTree1.desc }
+
+ent-CP14MushroomTree1Glowing = гигантский светящийся гриб
+    .desc = { ent-CP14MushroomTree1.desc }
+
+ent-CP14MushroomTree2Glowing = { ent-CP14MushroomTree1Glowing }
+    .desc = { ent-CP14MushroomTree1Glowing.desc }
+
+ent-CP14MushroomTree3Glowing = { ent-CP14MushroomTree1Glowing }
+    .desc = { ent-CP14MushroomTree1Glowing.desc }
+
+ent-CP14MushroomTree4Glowing = { ent-CP14MushroomTree1Glowing }
+    .desc = { ent-CP14MushroomTree1Glowing.desc }
+
 ent-CP14SpiderWeb = паучья паутина
     .desc = Она вязкая и липкая.
 
@@ -4382,6 +4750,30 @@ ent-CP14CrystalBase = кварц
 ent-CP14CrystalQuartz = { ent-CP14CrystalBase }
     .desc = { ent-CP14CrystalBase.desc }
     .suffix = Нормальный
+
+ent-CP14CrystalQuartzEarth = { ent-CP14CrystalBase }
+    .desc = { ent-CP14CrystalBase.desc }
+    .suffix = Земля
+
+ent-CP14CrystalQuartzFire = { ent-CP14CrystalBase }
+    .desc = { ent-CP14CrystalBase.desc }
+    .suffix = Огонь
+
+ent-CP14CrystalQuartzWater = { ent-CP14CrystalBase }
+    .desc = { ent-CP14CrystalBase.desc }
+    .suffix = Вода
+
+ent-CP14CrystalQuartzAir = { ent-CP14CrystalBase }
+    .desc = { ent-CP14CrystalBase.desc }
+    .suffix = Воздух
+
+ent-CP14CrystalQuartzOrder = { ent-CP14CrystalBase }
+    .desc = { ent-CP14CrystalBase.desc }
+    .suffix = Порядок
+
+ent-CP14CrystalQuartzChaos = { ent-CP14CrystalBase }
+    .desc = { ent-CP14CrystalBase.desc }
+    .suffix = Хаос
 
 ent-CP14GatherableBase = собираемое растение
 
@@ -4429,11 +4821,11 @@ ent-CP14GatherableBlueAmanita = лазурная аманита
     .desc = Небесно-голубой цветок, известный своими лечебными и магическими свойствами.
     .suffix = Собираемый
 
-ent-CP14GatherableChromiumSlime = хромовая слизь
+ent-CP14GatherableChromiumSlime = хромиевая слизь
     .desc = Это редкое густое вещество можно обнаружить в потоке воды, как будто оно обладает собственным разумом. При попытке изменить саму слизь - она меняет реагент, с которым взаимодействует.
     .suffix = Собираемый
 
-ent-CP14GatherableDayflin = желтые днецветы
+ent-CP14GatherableDayflin = жёлтые днецветы
     .desc = Желтый солнечный цветок, пахнущий топленым молоком. Может быть переработан в желтый краситель.
     .suffix = Собираемый
 
@@ -4443,6 +4835,10 @@ ent-CP14GatherableFlyAgaric = мухомор
 
 ent-CP14GatherableLumiMushroom = люмигриб
     .desc = Слабо светящийся гриб. Часто используется алхимиками как средство для концентрации растворов.
+    .suffix = Собираемый
+
+ent-CP14GatherableSilverNeedle = серебряная игла
+    .desc = Синие острые побеги пробиваются сквозь снег, с ярко-оранжевыми ягодами. Способность этого растения выживать даже в регионах с сильными морозами просто поразительна.
     .suffix = Собираемый
 
 ent-CP14WaterLilies = кувшинки
@@ -4477,7 +4873,7 @@ ent-CP14BarrelBloodGoblin = { ent-CP14BaseBarrel }
 
 ent-CP14BarrelBloodFlowerSap = { ent-CP14BaseBarrel }
     .desc = { ent-CP14BaseBarrel.desc }
-    .suffix = Сок кровавых роз
+    .suffix = Сок кровоцвета
 
 ent-CP14BarrelAgaricMushroom = { ent-CP14BaseBarrel }
     .desc = { ent-CP14BaseBarrel.desc }
@@ -4567,6 +4963,12 @@ ent-CP14CraneBarrelSmallAleBottomless = { ent-CP14CraneBarrelSmall }
     .desc = { ent-CP14CraneBarrelSmall.desc }
     .suffix = Эль. Bottomless
 
+ent-CP14BirchWoodenBed = { ent-CP14WoodenBed }
+    .desc = { ent-CP14WoodenBed.desc }
+
+ent-CP14BenchWoodBirch = { ent-CP14BenchWood }
+    .desc = { ent-CP14BenchWood.desc }
+
 ent-CP14Bonfire = костёр
     .desc = Груда бревен, сложенных вместе, и готовых вспыхнуть от малейшей искры.
 
@@ -4599,9 +5001,26 @@ ent-CP14CarpetOrange = { ent-CP14CarpetBase }
     .desc = { ent-CP14CarpetBase.desc }
     .suffix = Оранжевый
 
-ent-CP14CarpetPink = { ent-CP14CarpetBase }
+ent-CP14CarpetPurple = { ent-CP14CarpetBase }
     .desc = { ent-CP14CarpetBase.desc }
-    .suffix = Розовый
+    .suffix = Фиолетовый
+
+ent-CP14CarpetBlack = { ent-CP14CarpetBase }
+    .desc = { ent-CP14CarpetBase.desc }
+    .suffix = Чёрный
+
+ent-CP14CarpetYellow = { ent-CP14CarpetBase }
+    .desc = { ent-CP14CarpetBase.desc }
+    .suffix = Жёлтый
+
+ent-CP14ChairWoodenBirch = { ent-CP14ChairWooden }
+    .desc = { ent-CP14ChairWooden.desc }
+
+ent-CP14StoolWooden = деревянный табурет
+    .desc = { ent-CP14ChairWooden.desc }
+
+ent-CP14StoolBirch = берёзовый табурет
+    .desc = { ent-CP14StoolWooden.desc }
 
 ent-CP14ClosetBase = шкаф
     .desc = Обычный, ветхий шкаф.
@@ -4629,6 +5048,15 @@ ent-CP14CurtainsRed = { ent-CP14BaseCurtains }
 ent-CP14CurtainsRedOpened = { ent-CP14CurtainsRed }
     .desc = { ent-CP14CurtainsRed.desc }
     .suffix = Красные. Открытые
+
+ent-CP14BaseFireplace = печь
+
+ent-CP14Furnace = печь
+    .desc = Печь, работающая на дровах, угле или любом другом горючих материале. Удобна для подогрева еды или напитков.
+
+ent-CP14FurnaceDebug = { ent-CP14Furnace }
+    .desc = { ent-CP14Furnace.desc }
+    .suffix = Зажжённый, Бесконечный
 
 ent-CP14ClosetGlassShowcase = стеклянная витрина
     .desc = Сюда можно положить что-то ценное, не опасаясь, что оно будет незаметно украдено!
@@ -4686,11 +5114,20 @@ ent-CP14SafeMerchant3 = торговый магазин 3 сейф
 ent-CP14TableWoodenFrame = каркас деревянного стола
     .desc = Основа для деревянных столов любых видов.
 
+ent-CP14TableWoodenBirchFrame = { ent-CP14TableWoodenFrame }
+    .desc = { ent-CP14TableWoodenFrame.desc }
+
 ent-CP14TableWooden = деревянный стол
     .desc = Простой стол, сколоченный из досок.
 
+ent-CP14TableWoodenBirch = { ent-CP14TableWooden }
+    .desc = { ent-CP14TableWooden.desc }
+
 ent-CP14TableWoodenRound = круглый деревянный стол
     .desc = Простой стол из досок.
+
+ent-CP14TableWoodenBirchRound = круглый берёзовый стол
+    .desc = { ent-CP14TableWoodenRound.desc }
 
 ent-CP14TableWoodenCounter = деревянная стойка
     .desc = { ent-CP14TableWooden.desc }
@@ -4709,6 +5146,7 @@ ent-CP14FloorTorchIgnited = { ent-CP14FloorTorch }
     .suffix = Зажжённый
 
 ent-CP14FloorTorchAlwaysPowered = напольный факел
+    .desc = { ent-CP14BaseTorch.desc }
     .suffix = Debug, Бесконечный
 
 ent-CP14WallmountTorchIgnited = { ent-CP14WallmountTorch }
@@ -4716,6 +5154,7 @@ ent-CP14WallmountTorchIgnited = { ent-CP14WallmountTorch }
     .suffix = Зажжённый
 
 ent-CP14WallmountTorchAlwaysPowered = настенный факел
+    .desc = { ent-CP14WallmountTorch.desc }
     .suffix = Debug, Бесконечный
 
 ent-CP14WallmountBarShelfA = барная полка
@@ -4733,14 +5172,8 @@ ent-CP14WallmountLamp = { ent-CP14WallmountLampEmpty }
 ent-CP14BaseRoof = крыша
     .desc = Крыша над головой, защищающая от солнечного зноя или непогоды.
 
-ent-CP14BaseFireplace = печь
-
-ent-CP14AlchemyFurnace = алхимическая печь
-    .desc = Печь, работающая на дровах, угле или любом другом горящем материале. Удобна для подогрева алхимических зелий.
-
-ent-CP14AlchemyFurnaceDebug = { ent-CP14AlchemyFurnace }
-    .desc = { ent-CP14AlchemyFurnace.desc }
-    .suffix = Зажённый, Бесконечный
+ent-CP14RoofWoodenBirch = { ent-CP14RoofWooden }
+    .desc = { ent-CP14RoofWooden.desc }
 
 ent-CP14BaseSharpeningStoneStructure = стационарный точильный камень
     .desc = Прочный, долговечный точильный камень, способный затачивать оружие без особого вреда для него.
@@ -4764,6 +5197,10 @@ ent-CP14DemiplaneLinkCrystal = кристалл связи демиплана
 ent-CP14PortalFrameCrystal = рамка портала
     .desc = Структура из теневых кристаллов, используемая для создания стабильного портала в другое место.
 
+ent-CP14PortalFrameCrystalLight = { ent-CP14PortalFrameCrystal }
+    .desc = { ent-CP14PortalFrameCrystal.desc }
+    .suffix = Свечение
+
 ent-CP14DemiplaneCore = демиплановое ядро
     .desc = Сердце демиплана. Ваша задача - вынести его из демиплана в целости и сохранности и передать гильдмастеру.
 
@@ -4781,12 +5218,45 @@ ent-CP14WallmouontButtonStone = { ent-CP14WallmountButtonBase }
 
 ent-CP14CashConverter = конвертер валюты
     .desc = Простое магическое устройство, соединенное маленькими порталами с центральным банком империи. Он позволяет конвертировать монеты между номиналами и даже не взимает проценты! Это щедрость.
+    .suffix = Торговля
 
 ent-CP14TradingPlatform = пространственная платформа покупки
     .desc = Позволяет торговать с внешним миром через розничные торговые операции.
 
+ent-CP14TradingPlatformPublic = публичная платформа для закупок
+    .desc = Позволяет торговать с внешним миром посредством розничных торговых операций. Но поскольку этот розничный магазин не связан контрактами с конкретными торговцами, наценка здесь ужасная.
+
 ent-CP14TradingSellingPlatform = пространственная платформа продажи
     .desc = Позволяет продавать любые предметы и строения во внешний мир. Полностью заполните платформу маной, чтобы продать все, что вы на ней разместите.
+
+ent-CP14TradingSellingPlatformPublic = публичная торговая платформа
+    .desc = Позволяет продавать любые предметы и сооружения внешнему миру. Заполните платформу полностью маной, чтобы продать все, что вы на ней разместите. Но поскольку этот розничный магазин не связан контрактами с конкретными торговцами, наценка здесь ужасная.
+
+ent-CP14SalaryPlatform = платформа для расчета заработной платы
+    .desc = Позволяет быстро получить зарплату, на которую вы имеете право (если, конечно, вы должны получать зарплату от Империи)
+
+ent-CP14BaseGuardBell = сторожевой колокол
+    .desc = Сильный колокол, предупреждающий все поселение о возможной угрозе.
+
+ent-CP14GuardBell = { ent-CP14BaseGuardBell }
+    .desc = { ent-CP14BaseGuardBell.desc }
+
+ent-CP14GuardBell2 = { ent-CP14BaseGuardBell }
+    .desc = { ent-CP14BaseGuardBell.desc }
+
+ent-CP14GuardBell3 = { ent-CP14BaseGuardBell }
+    .desc = { ent-CP14BaseGuardBell.desc }
+
+ent-CP14GuardBell4 = { ent-CP14BaseGuardBell }
+    .desc = { ent-CP14BaseGuardBell.desc }
+
+ent-CP14GuardBellEffect1 = None
+
+ent-CP14GuardBellEffect2 = None
+
+ent-CP14GuardBellEffect3 = None
+
+ent-CP14GuardBellEffect4 = None
 
 ent-CP14BaseAltar = алтарь
     .desc = TODO
@@ -4830,6 +5300,9 @@ ent-CP14EssenceSplitterImpactEffect = воздействие разделите�
 
 ent-CP14ChestGeneric = сундук
     .desc = Сундук.
+
+ent-CP14WoodenChestOld = старый деревянный сундук
+    .desc = Старый сундук. Он многое повидал.
 
 ent-CP14BaseCrate = хранилище
 
@@ -4878,6 +5351,10 @@ ent-CP14WallStoneMithrilOre = { ent-CP14WallStone }
     .desc = Природная стена из цельного камня. Вы видите в ней манящие частицы мифрила.
     .suffix = мифриловая руда
 
+ent-CP14WallStoneCoalOre = { ent-CP14WallStone }
+    .desc = Природная стена из цельного камня. Вы видите в ней манящие частицы угля.
+    .suffix = угольная руда
+
 ent-CP14WallFrameStonebrick = стена из каменного кирпича
     .desc = { ent-CP14BaseWallFrame.desc }
 
@@ -4905,6 +5382,12 @@ ent-CP14WallFrameWoodenBirch = { ent-CP14WallFrameWooden }
 ent-CP14WallWoodenBirch = { ent-CP14WallWooden }
     .desc = { ent-CP14BaseWall.desc }
 
+ent-CP14WallFrameWoodenSpruce = { ent-CP14WallFrameWooden }
+    .desc = { ent-CP14WallFrameWooden.desc }
+
+ent-CP14WallWoodenSpruce = { ent-CP14WallWooden }
+    .desc = { ent-CP14WallWooden.desc }
+
 ent-CP14WindowDirectional = направленное окно
     .desc = Не заляпайте стекло.
 
@@ -4930,6 +5413,15 @@ ent-CP14BaseWindowFrame = оконная рама
 
 ent-CP14BaseWindowFrameBroken = разбитая оконная рама
     .desc = Разбитое окно. Вы можете залезть внутрь, но острые осколки разорвут вашу кожу.
+
+ent-CP14WindowWoodenBirch = { ent-CP14WindowWooden }
+    .desc = { ent-CP14WindowWooden.desc }
+
+ent-CP14WindowFrameWoodenBirch = { ent-CP14WindowFrameWooden }
+    .desc = { ent-CP14WindowFrameWooden.desc }
+
+ent-CP14WindowWoodenBirchBroken = { ent-CP14WindowWoodenBroken }
+    .desc = { ent-CP14WindowWoodenBroken.desc }
 
 ent-CP14AstralCorrosion = астральное заражение
     .desc = Светящиеся трещины в реальности. Возможно, это нормально.
@@ -4966,10 +5458,6 @@ ent-CP14PersonalCurrencyCollectObjective = None
 
 ent-CP14DemiplaneArtifactRoomSpawner = Спавнер комнаты артефактов в демиплане
 
-ent-CP14DemiplanCoreRoomMarker = Спавнер комнаты Демипланового ядра
-
-ent-CP14DemiplanEnterRoomMarker = Спавнер комнаты входа в демиплан
-
 ent-CP14DemiplaneRuinsRoomSpawner = Спавнер руин демиплана
 
 ent-CP14MindRoleDemiplaneAntag = Роль антага в демиплане
@@ -4987,6 +5475,9 @@ ent-CP14SmallWoodenCrateFilled = { ent-CP14SmallWoodenCrate }
 ent-CP14LargeWoodenCrateFilled = { ent-CP14LargeWoodenCrate }
     .desc = { ent-CP14LargeWoodenCrate.desc }
     .suffix = Заполненный, Инструменты и вещи
+
+ent-CP14ActionSpellSecondWind = Второе дыхание
+    .desc = Через боль и кровь ты обретаешь второе дыхание, мгновенно восстанавливая свою выносливость.
 
 ent-CP14FlameCreationArtificialFlame = искусственное пламя
     .desc = Магически созданное искусственное пламя, горящее прямо в воздухе. Неплохой источник света или оружие, если бросить его кому-нибудь в лицо.
@@ -5087,8 +5578,23 @@ ent-CP14BaseMobZombie = мистер Зомби
 ent-CP14FoodEggBase = яйцо
     .desc = Овальное яйцо!
 
+ent-CP14FoodStuffedPumpkin = Кланирская фаршированная тыква
+    .desc = Тыква, фаршированная мясом и овощами, очень популярна среди жителей Королевства Кланир.
+
 ent-CP14FoodTomatoes = помидор
     .desc = Красный, сочный помидор. Так и хочется бросить его кому-нибудь в лицо!
+
+ent-CP14FoodPotatoHot = горячая картошка
+    .desc = Теплые и румяные картофелины, приготовленные на огне.
+
+ent-CP14FoodChromiumJelly = хромиевое желе
+    .desc = На первый взгляд непримечательный, но вкуснее, чем кажется, главное — не переедать.
+
+ent-CP14GoblinPlushie = плюшевый гоблин
+    .desc = Этот маленький хитрец... Кажется, в него можно положить монетку, но не ясно, удасться ли её вернуть!
+
+ent-CP14SilvaPlushie = плюшевая сильва
+    .desc = Маленький, симпатичный кустик! Любит семена, и может последить за вашей фермой.
 
 ent-CP14Snowball = снежок
     .desc = Небольшая горсть снега, удобная для метания.
@@ -5134,7 +5640,15 @@ ent-CP14IronDoor = железная дверь
     .suffix = Открыто
 
 ent-CP14IronDoorWindowed = железная дверь с окном
-    .desc = массивная железная дверь с маленьким окошком. В него, конечно, можно заглянуть, но руку просунуть трудно.
+    .desc = Массивная железная дверь с маленьким окошком. В него, конечно, можно заглянуть, но руку просунуть трудно.
+    .suffix = Открыто
+
+ent-CP14WoodenBirchDoor = деревянная берёзовая дверь
+    .desc = Не самая прочная конструкция, но лучше, чем ничего.
+    .suffix = Открыто
+
+ent-CP14WoodenBirchDoorWindowed = деревянная берёзовая дверь с окном
+    .desc = { ent-CP14WoodenBirchDoor.desc }
     .suffix = Открыто
 
 ent-CP14WoodenDoor = деревянная дверь
@@ -5172,6 +5686,10 @@ ent-CP14IronDoorMirroredBlacksmith3 = { ent-CP14IronDoorBlacksmith3 }
 ent-CP14IronDoorWindowedMirroredCityGate = { ent-CP14IronDoorWindowedCityGate }
     .desc = { ent-CP14IronDoorWindowedCityGate.desc }
     .suffix = Казармы стражи, Зеркальная
+
+ent-CP14WoodenDoorMerchantShopPublicMirrored = { ent-CP14WoodenDoorMerchantShopPublic }
+    .desc = { ent-CP14WoodenDoorMerchantShopPublic.desc }
+    .suffix = Публичный торговый магазин, Зеркальная
 
 ent-CP14WoodenDoorMerchantShopMirrored1 = { ent-CP14WoodenDoorMerchantShop1 }
     .desc = { ent-CP14WoodenDoorMerchantShop1.desc }
@@ -5265,9 +5783,6 @@ ent-CP14Mannequin = манекен
 ent-CP14WoodenPallet = деревянный поддон
     .desc = Деревянная подставка для товаров.
 
-ent-CP14ResearchTable = исследовательский стол
-    .desc = Место для исследований, экспериментов и открытий, позволяющее вам стать умнее.
-
 ent-CP14Safe = сейф
     .desc = Гигантский железный ящик для хранения самых ценных вещей. Очень тяжелый и очень прочный.
 
@@ -5310,7 +5825,7 @@ ent-CP14RoofWooden = деревянная крыша
 ent-CP14RoofStone = каменная крыша
     .desc = { ent-CP14BaseRoof.desc }
 
-ent-CP14RoofRemover = отладка системы удаления крыши
+ent-CP14RoofRemover = удаление крыши
     .desc = { ent-CP14BaseRoof.desc }
 
 ent-CP14AlchemySolutionCleaner = очиститель растворов
@@ -5336,6 +5851,9 @@ ent-CP14EssenceSplitter = разделитель эссенции
 
 ent-CP14WoodenChest = деревянный сундук
     .desc = Простой деревянный сундук для удобного хранения хлама.
+
+ent-CP14GoldChest = золотой сундук
+    .desc = Кто-то потратил много денег и усилий, чтобы украсить этот сундук золотом. Это не сделало сундук более функциональным, но сделало его красивым.
 
 ent-CP14CrateCoffin = гроб
     .desc = Удобный и красивый гроб для комфортного ожидания воскрешения.
